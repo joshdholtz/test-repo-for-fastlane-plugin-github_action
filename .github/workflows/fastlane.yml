@@ -22,6 +22,7 @@ jobs:
           eval "$(ssh-agent -s)"
           ssh-add - <<< "${MATCH_DEPLOY_KEY}"
           git clone git@github.com:joshdholtz/match-repo-for-fastlane-plugin-github_action.git
+          ls
 
       - name: Build and Distribution
         env:
@@ -34,4 +35,4 @@ jobs:
         run: |
           eval "$(ssh-agent -s)"
           ssh-add - <<< "${MATCH_DEPLOY_KEY}"
-          bundle exec fastlane lane
+          bundle exec fastlane test
