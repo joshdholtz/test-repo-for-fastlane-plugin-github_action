@@ -1,0 +1,9 @@
+lane :create_github_action do
+  github_action(
+    org: "joshdholtz",
+    repo: "test-repo-for-fastlane-plugin-github_actions",
+    match_org: "joshdholtz",
+    match_repo: "match-repo-for-fastlane-plugin-github_action",
+    dotenv_paths: ["fastlane/.env.secret", "fastlane/.env.secret2"]
+  )
+end
