@@ -7,3 +7,7 @@ lane :create_github_action do
     dotenv_paths: ["fastlane/.env.secret", "fastlane/.env.secret2"]
   )
 end
+
+lane :test do
+  UI.success("It works!")
+end
