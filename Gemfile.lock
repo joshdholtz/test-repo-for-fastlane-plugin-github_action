@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/joshdholtz/fastlane-plugin-github_action.git
-  revision: 48846d5055bf99182a490310bb2fca7b1fdb0d55
+  revision: 6dba4975e714d4fd7e6ee57e0d77ea748ef2891c
   specs:
     fastlane-plugin-github_action (0.1.0)
       dotenv
