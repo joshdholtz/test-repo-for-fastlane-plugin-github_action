@@ -1,9 +1,18 @@
 lane :create_github_action do
   github_action(
+    # Repo to add GitHub Actions too
     org: "joshdholtz",
-    repo: "test-repo-for-fastlane-plugin-github_actions",
+    repo: "test-repo-for-fastlane-plugin-github_action",
+
+    # Match repo
     match_org: "joshdholtz",
     match_repo: "match-repo-for-fastlane-plugin-github_action",
+
+    # .env files with environment secret environment variables
     dotenv_paths: ["fastlane/.env.secret", "fastlane/.env.secret2"]
   )
+end
+
+lane :test do
+  UI.success("It works!")
 end
