@@ -1,13 +1,7 @@
-PATH
-  remote: ../fastlane-plugin-github_actions
-  specs:
-    fastlane-plugin-github_action (0.1.0)
-      dotenv
-      rbnacl
-      sshkey
-
-PATH
-  remote: ../fastlane
+GIT
+  remote: https://github.com/fastlane/fastlane.git
+  revision: b8d0436687babbcaba919b3b89b8fcdb7d6f5f7a
+  branch: joshdholtz-fix-plugin-name-parsing
   specs:
     fastlane (2.148.0)
       CFPropertyList (>= 2.3, < 4.0.0)
@@ -47,6 +41,15 @@ PATH
       xcodeproj (>= 1.13.0, < 2.0.0)
       xcpretty (~> 0.3.0)
       xcpretty-travis-formatter (>= 0.0.3)
+
+GIT
+  remote: https://github.com/joshdholtz/fastlane-plugin-github_action.git
+  revision: 48846d5055bf99182a490310bb2fca7b1fdb0d55
+  specs:
+    fastlane-plugin-github_action (0.1.0)
+      dotenv
+      rbnacl
+      sshkey
 
 GEM
   remote: https://rubygems.org/
