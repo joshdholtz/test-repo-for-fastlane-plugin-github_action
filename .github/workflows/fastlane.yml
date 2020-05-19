@@ -1,0 +1,21 @@
+name: Execute fastlane
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build_dev:
+    name: Execute fastlane
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Install Ruby Dependencies
+        run: bundle install
+
+
+      - name: fastlane
+        run: |
+          bundle exec fastlane test
+
