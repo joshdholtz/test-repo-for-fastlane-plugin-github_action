@@ -24,7 +24,8 @@ jobs:
           git clone git@github.com:joshdholtz/match-repo-for-fastlane-plugin-github_action.git
           ls match-repo-for-fastlane-plugin-github_action
 
-      - name: Build and Distribution
+
+      - name: fastlane
         env:
           APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.APPLICATION_SPECIFIC_PASSWORD  }}
           HOCKEY_API_TOKEN: ${{ secrets.HOCKEY_API_TOKEN  }}
@@ -36,3 +37,4 @@ jobs:
           eval "$(ssh-agent -s)"
           ssh-add - <<< "${MATCH_DEPLOY_KEY}"
           bundle exec fastlane test
+
