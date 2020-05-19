@@ -14,8 +14,8 @@ jobs:
       - name: Install Ruby Dependencies
         run: bundle install
 
-      - name: Build and Distribution
-        env:
 
+      - name: fastlane
         run: |
           bundle exec fastlane test
+
