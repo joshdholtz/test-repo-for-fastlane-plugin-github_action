@@ -1,3 +1,5 @@
+setup_ci
+
 lane :create_github_action do
   github_action(
     # Repo to add GitHub Actions too
